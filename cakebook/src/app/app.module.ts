@@ -30,6 +30,7 @@ import {AuthService} from "./services/auth.service";
 import {AuthInterceptor} from "./services/auth/auth.interceptor";
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { SignupComponent } from './components/signup/signup.component';
 
     FilterTitlePipe,
      LoginComponent,
-     SignupComponent
+     SignupComponent,
+     NavbarComponent
   ],
   imports: [
     BrowserModule,
