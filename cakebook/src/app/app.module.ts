@@ -14,6 +14,7 @@ import { CakebookItemIngredientsComponent } from './components/cakebook-item-ing
 import { CakebookItemTitleComponent } from './components/cakebook-item-title/cakebook-item-title.component';
 import { CakebookItemRecipeinfoComponent } from './components/cakebook-item-recipeinfo/cakebook-item-recipeinfo.component';
 import { CakebookItemDetailsComponent } from './components/cakebook-item-details/cakebook-item-details.component';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CakebookItemDetailsComponent } from './components/cakebook-item-details
     CakebookItemIngredientsComponent,
     CakebookItemTitleComponent,
     CakebookItemRecipeinfoComponent,
-    CakebookItemDetailsComponent
+    CakebookItemDetailsComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,
