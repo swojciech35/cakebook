@@ -12,5 +12,5 @@ export class CakebookItemComponent {
   @Input() description?: string;
   @Input() amountOfIngredients?: any;
   @Input() amountOfDirections?: any;
-
+  @Input() id?: number;
 }

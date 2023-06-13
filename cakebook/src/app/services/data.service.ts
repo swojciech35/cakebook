@@ -12,7 +12,7 @@ export class DataService {
     return this.http.get(this.url + '/api/recipes');
   }
   getById(id: string) {
-    return this.http.get(this.url + '/api/recipes/' + id);
+    return this.http.get(this.url + '/api/recipe/' + id);
   }
 
   addPost(credentials: any) {
