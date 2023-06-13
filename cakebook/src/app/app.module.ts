@@ -15,6 +15,11 @@ import { CakebookItemTitleComponent } from './components/cakebook-item-title/cak
 import { CakebookItemRecipeinfoComponent } from './components/cakebook-item-recipeinfo/cakebook-item-recipeinfo.component';
 import { CakebookItemDetailsComponent } from './components/cakebook-item-details/cakebook-item-details.component';
 import { SummaryPipe } from './pipes/summary.pipe';
+import { SearchBarComponent } from './shared/search-bar/search-bar.component';
+import {FormsModule} from "@angular/forms";
+import { CakebookHomeComponent } from './components/cakebook-home/cakebook-home.component';
+
+import { FilterTitlePipe } from './pipes/filter-title.pipe';
 
 @NgModule({
   declarations: [
@@ -28,12 +33,17 @@ import { SummaryPipe } from './pipes/summary.pipe';
     CakebookItemTitleComponent,
     CakebookItemRecipeinfoComponent,
     CakebookItemDetailsComponent,
-    SummaryPipe
+    SummaryPipe,
+    SearchBarComponent,
+    CakebookHomeComponent,
+
+    FilterTitlePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ DataService],
   bootstrap: [AppComponent]
