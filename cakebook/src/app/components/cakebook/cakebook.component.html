@@ -1,0 +1,10 @@
+
+<div class="grid-container">
+  <div *ngFor="let item of items$ |filter:filterTitle"  class="grid-item">
+  <cakebook-item [image]="item.image" [title]="item.title" [description]="item.description"
+  [amountOfIngredients]="item.ingredients" [amountOfDirections]="item.directions" [id]="item.id"
+
+  ></cakebook-item>
+
+</div>
+
