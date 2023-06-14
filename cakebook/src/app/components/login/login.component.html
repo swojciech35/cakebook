@@ -5,10 +5,14 @@
     <form action="post" autocomplete="off" method="POST">
       <h1 class="entry-title"><span>Zaloguj się </span></h1><hr>
       <div class="input-group">
+        <label class="control-label col-sm-3">Login<span class="text-danger">*</span></label>
+        <div class="input-group">
         <input [(ngModel)]="credentials.login" type="text" class="form-control"
                name="username" placeholder="Nazwa" title="Login">
       </div>
+        </div>
 
+      <label class="control-label col-sm-3">Hasło<span class="text-danger">*</span></label>
       <div class="input-group">
         <input [(ngModel)]="credentials.password" type="password" class="form-control"
                name="password" placeholder="Hasło" title="Password">
