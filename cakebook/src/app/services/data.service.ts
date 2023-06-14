@@ -15,9 +15,9 @@ export class DataService {
     return this.http.get(this.url + '/api/recipe/' + id);
   }
 
-  addPost(credentials: any) {
+  addRecipe(credentials: any) {
     console.log(credentials)
-    return this.http.post(this.url + '/api/recipes', credentials);
+    return this.http.post(this.url + '/api/recipe', credentials);
   }
 
 }

@@ -1,0 +1,5 @@
+
+<div *ngFor="let element of directionsElements" class="mb-2">
+  <p class="d-inline-block mb-0">Krok{{ element.numberOfDirections}} - {{ element.directions }}  </p>
+  <button (click)="deleteIngredients(element)" class="btn btn-sm btn-danger ml-2">Usuń</button>
+</div>

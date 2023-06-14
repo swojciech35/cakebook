@@ -6,6 +6,7 @@ import {CakebookItemDetailsComponent} from "./components/cakebook-item-details/c
 import {AuthGuard} from "./services/auth.guard";
 import {LoginComponent} from "./components/login/login.component";
 import {SignupComponent} from "./components/signup/signup.component";
+import {NewrecipeComponent} from "./components/newrecipe/newrecipe.component";
 
 const routes: Routes = [{
   path: '',
@@ -25,6 +26,10 @@ const routes: Routes = [{
   {
     path: 'signup',
     component: SignupComponent
+  },
+  {
+    path: 'newrecipe',
+    component: NewrecipeComponent
   }
 
 

@@ -1,0 +1,73 @@
+
+<!--&lt;!&ndash;<div *ngFor="let element of ingredientsElements">&ndash;&gt;-->
+<!--&lt;!&ndash;  <p>- {{ element.number }} {{ element.type }} {{ element.ingredients }}&ndash;&gt;-->
+<!--&lt;!&ndash;    <button (click)="deleteIngredients(element)">Usuń</button>&ndash;&gt;-->
+<!--&lt;!&ndash;  </p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--  <form (ngSubmit)="create()" #form="ngForm" class="w-50" style="margin-left: 2%">-->
+<!--    <div class="mb-3">-->
+<!--      <label for="title" class="form-label">Title</label>-->
+<!--      <input type="text" id="title" name="title" class="form-control form-control-sm" [(ngModel)]="formData.title" required>-->
+<!--    </div>-->
+<!--    <div class="mb-3">-->
+<!--      <label for="description" class="form-label">Description</label>-->
+<!--      <textarea id="description" name="description" class="form-control form-control-sm" [(ngModel)]="formData.description" required></textarea>-->
+<!--    </div>-->
+<!--    <div class="mb-3">-->
+<!--      <label for="image" class="form-label">Image URL</label>-->
+<!--      <input type="text" id="image" name="image" class="form-control form-control-sm" [(ngModel)]="formData.image" required>-->
+<!--    </div>-->
+
+
+<!--    <h3>Składniki:</h3>-->
+
+<!--<app-newrecipe-showingredients [ingredientsElements]="ingredientsElements"></app-newrecipe-showingredients>-->
+
+
+<!--<newrecipe-formingredients (addIngredients)="addIngredients($event)"></newrecipe-formingredients>-->
+<!--<h3>Sposób przygotowania:</h3>-->
+
+<!--    <newrecipe-showdirections [directionsElements]="directionsElement"></newrecipe-showdirections>-->
+
+<!--    <newrecipe-formdirections (addDirections)="addDirections($event)"></newrecipe-formdirections>-->
+
+<!--    <button   type="submit" class="btn btn-primary btn-sm">Dodaj przepis </button>-->
+<!--  </form>-->
+
+<div class="background">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2>Utwórz nowy przepis</h2>
+      <form (ngSubmit)="create()" #form="ngForm" class="my-4">
+        <div class="mb-3">
+          <label for="title" class="form-label">Tytuł</label>
+          <input type="text" id="title" name="title" class="form-control" [(ngModel)]="formData.title" required>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Opis</label>
+          <textarea id="description" name="description" class="form-control" [(ngModel)]="formData.description" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="image" class="form-label">URL zdjęcia</label>
+          <input type="text" id="image" name="image" class="form-control" [(ngModel)]="formData.image" required>
+        </div>
+
+        <h3>Składniki:</h3>
+
+        <app-newrecipe-showingredients [ingredientsElements]="ingredientsElements"></app-newrecipe-showingredients>
+
+        <newrecipe-formingredients (addIngredients)="addIngredients($event)"></newrecipe-formingredients>
+
+        <h3>Sposób przygotowania:</h3>
+
+        <newrecipe-showdirections [directionsElements]="directionsElement"></newrecipe-showdirections>
+
+        <newrecipe-formdirections (addDirections)="addDirections($event)"></newrecipe-formdirections>
+
+        <button type="submit" class="btn btn-primary">Dodaj przepis</button></form>
+    </div>
+  </div>
+</div>
+</div>
