@@ -9,6 +9,7 @@ import {DataService} from "../../services/data.service";
 export class CakebookItemDetailsComponent  implements OnInit {
   public image: string = '';
   public title: string = '';
+  public description:string=''
   public ingredients$: any;
   public direction$:any;
 
@@ -28,6 +29,7 @@ export class CakebookItemDetailsComponent  implements OnInit {
       this.title = res['title'];
       this.ingredients$=res['ingredients'];
       this.direction$=res['directions']
+      this.description=res['description']
     });
 
   }
