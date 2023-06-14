@@ -17,7 +17,7 @@ const routes: Routes = [{
   {
     path: 'recipe/detail/:id',
     component: CakebookItemDetailsComponent,
-    canActivate: [AuthGuard]
+
   },
   {
     path: 'login',
@@ -29,7 +29,8 @@ const routes: Routes = [{
   },
   {
     path: 'newrecipe',
-    component: NewrecipeComponent
+    component: NewrecipeComponent,
+    canActivate: [AuthGuard]
   }
 
 
