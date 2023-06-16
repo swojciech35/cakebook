@@ -8,5 +8,5 @@ import {Component, Input} from '@angular/core';
 export class CakebookItemRecipeinfoComponent {
 
   @Input() amountOfIngredients?: any;
-  @Input() amountOfDirections?: any;
+  @Input() amountOfSteps?: any;
 }

@@ -11,7 +11,7 @@ export class CakebookItemDetailsComponent  implements OnInit {
   public title: string = '';
   public description:string=''
   public ingredients$: any;
-  public direction$:any;
+  public steps$:any;
 
 
   constructor(private service: DataService, private route: ActivatedRoute) {
@@ -28,7 +28,7 @@ export class CakebookItemDetailsComponent  implements OnInit {
       this.image = res['image'];
       this.title = res['title'];
       this.ingredients$=res['ingredients'];
-      this.direction$=res['directions']
+      this.steps$=res['steps']
       this.description=res['description']
     });
 

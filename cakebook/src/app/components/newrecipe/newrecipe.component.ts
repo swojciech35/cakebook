@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
 export class NewrecipeComponent {
 
   ingredientsElements: any[] = [];
-  directionsElement:any[]=[];
+  stepsElement:any[]=[];
 
 
   constructor(private dataService: DataService, public router: Router) {
@@ -27,20 +27,20 @@ export class NewrecipeComponent {
     }
   }
 
-  addDirections(event:any){
-    this.directionsElement.push(event);
+  addStep(event:any){
+    this.stepsElement.push(event);
   }
 
-  deleteDirections(element: any) {
-    const index = this.directionsElement.indexOf(element);
+  deleteStep(element: any) {
+    const index = this.stepsElement.indexOf(element);
     if (index !== -1) {
-      this.directionsElement.splice(index, 1);
+      this.stepsElement.splice(index, 1);
     }
   }
 
   showTab() {
     console.log(this.ingredientsElements);
-    console.log(this.directionsElement);
+    console.log(this.stepsElement);
   }
 
 
@@ -50,7 +50,7 @@ export class NewrecipeComponent {
     description: '',
     image: '',
     ingredients: this.ingredientsElements,
-    directions: this.directionsElement
+    steps: this.stepsElement
 
   };
 

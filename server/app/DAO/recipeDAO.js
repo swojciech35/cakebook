@@ -11,9 +11,9 @@ const ingredientsSchema = new mongoose.Schema({
 
 },{id:false,_id:false})
 
-const directionsSchema = new mongoose.Schema({
-    directions:String,
-    numberOfDirections:String,
+const stepsSchema = new mongoose.Schema({
+    step:String,
+    numberOfStep:String,
 
 },{id:false,_id:false})
 
@@ -22,7 +22,7 @@ const recipeSchema= new mongoose.Schema({
     description:String,
     image:String,
     ingredients:[ingredientsSchema],
-    directions:[directionsSchema]
+    steps:[stepsSchema]
 })
 recipeSchema.plugin(uniqueValidator);
 const RecipeModel=mongoose.model('db_recipe',recipeSchema);
