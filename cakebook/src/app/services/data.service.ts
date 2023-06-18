@@ -19,5 +19,8 @@ export class DataService {
     console.log(credentials)
     return this.http.post(this.url + '/api/recipe', credentials);
   }
+  deleteById(id:string){
+    return this.http.delete(this.url + '/api/recipe/'+id);
+  }
 
 }

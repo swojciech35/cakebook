@@ -33,4 +33,15 @@ export class CakebookItemDetailsComponent  implements OnInit {
     });
 
   }
+
+  deletePost() {
+    let id: string = '';
+    this.route.paramMap
+      .subscribe((params: any) => {
+        id = params.get('id');
+      });
+    this.service.deleteById(id).subscribe();
+
+
+  }
 }
