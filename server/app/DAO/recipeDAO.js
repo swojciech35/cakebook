@@ -58,10 +58,14 @@ async function createNewOrUpdate(data) {
     });
 }
 
+async function remove(id){
+    return RecipeModel.findByIdAndRemove(id);
+}
+
 export default {
     query: query,
     get: get,
     createNewOrUpdate: createNewOrUpdate,
-
+    remove: remove,
     model: RecipeModel
 };
