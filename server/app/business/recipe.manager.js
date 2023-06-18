@@ -22,10 +22,18 @@ function create(context) {
         }
     }
 
+    async function remove(id) {
+        let result = await recipeDAO.remove(id);
+        if (result) {
+            return result;
+        }
+    }
+
     return {
         query: query,
         get: get,
         createNewOrUpdate: createNewOrUpdate,
+        remove:remove,
     };
 }
 

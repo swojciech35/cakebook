@@ -36,5 +36,21 @@ const recipeEndpoint = (router) => {
         }
     });
 
-}
+    router.delete('/api/recipe/:id', async (req, res) => {
+        const { id } = req.params;
+        try {
+            const result = await business.getRecipeManager().remove(id);
+            if (result) {
+                res.status(200).send(result);
+            } else {
+                res.status(404).send('Recipe not found');
+            }
+        } catch (error) {
+            console.log(error);
+            res.status(500).send('An error occurred');
+        }
+    });
+};
+
+
 export default recipeEndpoint;
