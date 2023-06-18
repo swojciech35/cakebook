@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CakebookItemDirectionsComponent } from './cakebook-item-directions.component';
+import { CakebookItemStepsComponent } from './cakebook-item-steps.component';
 
 describe('CakebookItemDirectionsComponent', () => {
-  let component: CakebookItemDirectionsComponent;
-  let fixture: ComponentFixture<CakebookItemDirectionsComponent>;
+  let component: CakebookItemStepsComponent;
+  let fixture: ComponentFixture<CakebookItemStepsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CakebookItemDirectionsComponent]
+      declarations: [CakebookItemStepsComponent]
     });
-    fixture = TestBed.createComponent(CakebookItemDirectionsComponent);
+    fixture = TestBed.createComponent(CakebookItemStepsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

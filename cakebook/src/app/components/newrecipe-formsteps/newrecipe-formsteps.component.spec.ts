@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewrecipeFormdirectionsComponent } from './newrecipe-formdirections.component';
+import { NewrecipeFormstepsComponent } from './newrecipe-formsteps.component';
 
 describe('NewrecipeFormdirectionsComponent', () => {
-  let component: NewrecipeFormdirectionsComponent;
-  let fixture: ComponentFixture<NewrecipeFormdirectionsComponent>;
+  let component: NewrecipeFormstepsComponent;
+  let fixture: ComponentFixture<NewrecipeFormstepsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NewrecipeFormdirectionsComponent]
+      declarations: [NewrecipeFormstepsComponent]
     });
-    fixture = TestBed.createComponent(NewrecipeFormdirectionsComponent);
+    fixture = TestBed.createComponent(NewrecipeFormstepsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

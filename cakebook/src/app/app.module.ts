@@ -10,8 +10,8 @@ import {CakebookItemComponent} from './components/cakebook-item/cakebook-item.co
 import {CakebookItemImageComponent} from './components/cakebook-item-image/cakebook-item-image.component';
 import {CakebookItemTextComponent} from './components/cakebook-item-text/cakebook-item-text.component';
 import {
-  CakebookItemDirectionsComponent
-} from './components/cakebook-item-directions/cakebook-item-directions.component';
+  CakebookItemStepsComponent
+} from './components/cakebook-item-steps/cakebook-item-steps.component';
 import {
   CakebookItemIngredientsComponent
 } from './components/cakebook-item-ingredients/cakebook-item-ingredients.component';
@@ -34,8 +34,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NewrecipeComponent } from './components/newrecipe/newrecipe.component';
 import { NewrecipeFormingredientsComponent } from './components/newrecipe-formingredients/newrecipe-formingredients.component';
 import { NewrecipeShowingredientsComponent } from './components/newrecipe-showingredients/newrecipe-showingredients.component';
-import { NewrecipeFormdirectionsComponent } from './components/newrecipe-formdirections/newrecipe-formdirections.component';
-import { NewrecipeShowdirectionsComponent } from './components/newrecipe-showdirections/newrecipe-showdirections.component';
+import { NewrecipeFormstepsComponent } from './components/newrecipe-formsteps/newrecipe-formsteps.component';
+import { NewrecipeShowstepsComponent } from './components/newrecipe-showsteps/newrecipe-showsteps.component';
+import { TextFormatDirective } from './directives/text-format.directive';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { NewrecipeShowdirectionsComponent } from './components/newrecipe-showdir
     CakebookItemComponent,
     CakebookItemImageComponent,
     CakebookItemTextComponent,
-    CakebookItemDirectionsComponent,
+    CakebookItemStepsComponent,
     CakebookItemIngredientsComponent,
     CakebookItemTitleComponent,
     CakebookItemRecipeinfoComponent,
@@ -60,8 +61,9 @@ import { NewrecipeShowdirectionsComponent } from './components/newrecipe-showdir
      NewrecipeComponent,
      NewrecipeFormingredientsComponent,
      NewrecipeShowingredientsComponent,
-     NewrecipeFormdirectionsComponent,
-     NewrecipeShowdirectionsComponent,
+     NewrecipeFormstepsComponent,
+     NewrecipeShowstepsComponent,
+     TextFormatDirective,
 
   ],
   imports: [
