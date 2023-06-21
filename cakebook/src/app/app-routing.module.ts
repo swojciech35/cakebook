@@ -7,6 +7,7 @@ import {AuthGuard} from "./services/auth.guard";
 import {LoginComponent} from "./components/login/login.component";
 import {SignupComponent} from "./components/signup/signup.component";
 import {NewrecipeComponent} from "./components/newrecipe/newrecipe.component";
+import {EditrecipeComponent} from "./editrecipe/editrecipe.component";
 
 const routes: Routes = [{
   path: '',
@@ -30,6 +31,11 @@ const routes: Routes = [{
   {
     path: 'newrecipe',
     component: NewrecipeComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'edit/:id',
+    component: EditrecipeComponent,
     canActivate: [AuthGuard]
   }
 

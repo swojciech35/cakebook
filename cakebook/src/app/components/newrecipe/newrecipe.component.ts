@@ -55,7 +55,6 @@ export class NewrecipeComponent {
   };
 
   create() {
-    // Obsługa logiki po zatwierdzeniu formularza
     console.log("halo to ja");
     this.dataService.addRecipe(this.formData).subscribe((result) => {
       return result;

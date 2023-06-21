@@ -1,0 +1,13 @@
+button{
+  margin-top: 30px;
+}
+.background{
+  min-height: 100vh;
+  background-image: url("https://cdn.discordapp.com/attachments/901900441237999666/1118457853527724132/luke-chesser-pJadQetzTkI-unsplash.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+
+}
+h2{
+  margin-top: 30px;
+}

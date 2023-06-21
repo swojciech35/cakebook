@@ -37,6 +37,7 @@ import { NewrecipeShowingredientsComponent } from './components/newrecipe-showin
 import { NewrecipeFormstepsComponent } from './components/newrecipe-formsteps/newrecipe-formsteps.component';
 import { NewrecipeShowstepsComponent } from './components/newrecipe-showsteps/newrecipe-showsteps.component';
 import { TextFormatDirective } from './directives/text-format.directive';
+import { EditrecipeComponent } from './editrecipe/editrecipe.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { TextFormatDirective } from './directives/text-format.directive';
      NewrecipeFormstepsComponent,
      NewrecipeShowstepsComponent,
      TextFormatDirective,
+     EditrecipeComponent,
 
   ],
   imports: [
